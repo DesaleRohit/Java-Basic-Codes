@@ -4,6 +4,6 @@ class BitwiseOR {
         int b = 4;                  //Binary 100          
         int c = a | b;              //---------------
         System.out.println(c);     //        101 = 5
-                                  //  output is 7 
+                                  //  output is 5 
     }
 }
