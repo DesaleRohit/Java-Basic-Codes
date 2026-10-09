@@ -3,7 +3,7 @@ import java.util.List;
 
 public class StreamPractice {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(2, 10, 20, 50, 80, 90);
+        List<Integer> list = Arrays.asList(2, 5, 10, 20, 50, 80, 90);
 
         List<String> names = Arrays.asList(
                 "Rohit", "Amit", "Rahul", "Ankit", "Priya");
@@ -12,5 +12,9 @@ public class StreamPractice {
         list.stream()
                 .forEach(System.out::println);
 
+        // 2. Print even numbers
+        list.stream()
+                .filter(n -> n % 2 == 0)
+                .forEach(System.out::println);        
     }
 }
