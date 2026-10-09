@@ -15,6 +15,11 @@ public class StreamPractice {
         // 2. Print even numbers
         list.stream()
                 .filter(n -> n % 2 == 0)
-                .forEach(System.out::println);        
+                .forEach(System.out::println);
+
+        List<Integer> result = list.stream()
+                .filter(n -> n < 15)
+                .toList();
+        System.out.println(result);
     }
 }
